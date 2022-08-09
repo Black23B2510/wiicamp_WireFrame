@@ -2,9 +2,9 @@
     --main-color: #000000;
     --box-color: #E1E1E1;
     --box-border-radius: 10px;
-    --ff1: 'Roboto', sans-serif;
-    --ff2: 'Montserrat', sans-serif;
-    --ff3: 'Poppins', sans-serif;
+    --ff-roboto: 'Roboto', sans-serif;
+    --ff-montserrat: 'Montserrat', sans-serif;
+    --ff-poppins: 'Poppins', sans-serif;
     /* font size */
     --fz1: 15px;
     --fz2: 18px;
@@ -35,7 +35,7 @@
 .header{
     height: 80px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: nowrap;
     background-color: #FFFFFF;
 }
@@ -57,7 +57,7 @@
     display: none;
 }
 .header__navbar a{
-    font: var(--fz1) ;
+    font: var(--fz1) var(--ff-montserrat) ;
     font-weight: 400;
     color: var(--main-color);
 }
@@ -90,7 +90,7 @@
     gap: 16px;
 }
 .swiper-slide__title{
-    font: var(--fz5) var(--ff2);
+    font: var(--fz5) var(--ff-montserrat);
     font-weight: 700;
     line-height: 59px;
     color: #000000;
@@ -99,7 +99,7 @@
 .swiper-slide__text{
     width: 487px;
     height: auto;
-    font: var(--fz1) var(--ff1);
+    font: var(--fz1) var(--ff-roboto);
     font-weight: 400;
     line-height: 130%;
     word-wrap: break-word;
@@ -113,7 +113,7 @@
 .feature-products h3{
     margin-top: 7%;
     margin-bottom: 3%;
-    font: var(--fz4) var(--ff2);
+    font: var(--fz4) var(--ff-montserrat);
     font-weight: 700;
     line-height: 39px;
     text-align: center;
@@ -155,7 +155,7 @@
 
 .our-products h3{
     margin-top: 15%;
-    font: var(--fz4) var(--ff2);
+    font: var(--fz4) var(--ff-montserrat);
     font-weight: 700;
     line-height: 39px;
     color: var(--main-color);
@@ -182,7 +182,7 @@
 }
 
 .product-menu-nav .nav-item a{
-    font: var(--fz2) var(--ff2);
+    font: var(--fz2) var(--ff-montserrat);
     font-weight: 400;
     line-height: 22px;
     color: #656565;
@@ -221,14 +221,14 @@
 
 .card-desc .card-desc__name{
     margin-bottom: 4px;
-    font: var(--fz3) var(--ff2);
+    font: var(--fz3) var(--ff-montserrat);
     font-weight: 700;
     line-height: 130%;
     color: #404040;
 }
 
 .card-desc .card-desc__price{
-    font: var(--fz1) var(--ff2);
+    font: var(--fz1) var(--ff-montserrat);
     font-weight: 400;
     line-height: 18px;
     color: #404040;
@@ -247,7 +247,7 @@
 }
 
 .about-us .about-us__title{
-    font: var(--fz4) var(--ff2);
+    font: var(--fz4) var(--ff-montserrat);
     font-weight: 700;
     line-height: 39px;
     color: var(--main-color);
@@ -256,7 +256,7 @@
 .about-us .about-us__content{
     width: 581px;
     height: auto;
-    font: var(--fz1) var(--ff1);
+    font: var(--fz1) var(--ff-roboto);
     font-weight: 400;
     line-height: 18px;
     color: #404040;
@@ -269,7 +269,7 @@
     height: 50px;
     padding: 16px;
     border-radius: var(--box-border-radius);
-    font: var(--fz1) var(--ff1);
+    font: var(--fz1) var(--ff-roboto);
     font-weight: 400;
     line-height: 18px;
     color: #F2F2F2;
@@ -294,7 +294,7 @@
 
 .footer-signup .footer-signup__title{
     color: #FFFFFF;
-    font: 16px var(--ff3);
+    font: 16px var(--ff-poppins);
     font-weight: 700;
     line-height: 24px;
 }
@@ -317,15 +317,13 @@
 
 .footer-sign-up__input input{
     width: 70%;
-    /* margin: 12px 0 13px 40px; */
     color: #9A9A9A;
     opacity: 0.6;
 }
 
 .footer-sign-up__input button{
-    /* margin: 12px 40px 13px 0; */
     color: var(--main-color);
-    font: var(--fz1) var(--ff3);
+    font: var(--fz1) var(--ff-poppins);
     font-weight: 600;
     line-height: 150%;
 }
@@ -349,35 +347,27 @@
 
 .footer-infor p{
     color: #FFFFFF;
-    font: var(--fz4) var(--ff2);
+    font: var(--fz4) var(--ff-montserrat);
     font-weight: 700;
     line-height: 39px;
 }
 
+.footer-infor .middle__site, .footer-infor .middle__terms{
+    display: flex;
+    flex-direction: column;
+}
 .footer-infor h4{
+    padding-bottom: 16px;
     color: #9D9D9D;
-    font: var(--fz2) var(--ff2);
-    font-weight: 400;
-    line-height: 22px;
-    
+    font: var(--fz2) var(--ff-montserrat);
 }
-
-.site-title, .terms-title{
-    margin-bottom: 29px;
-}
-
 .footer-infor li{
-    margin-bottom: 13px;
-}
-
-.footer-infor .site-list a, .footer-infor .terms-list a{
     color: #FFFFFF;
-    font: var(--fz1) var(--ff2);
-    font-weight: 500;
-    line-height: 18px;
+    font: var(--fz1) var(--ff-montserrat);
 }
-
-
+.footer-infor li:nth-child(1){
+    padding: 16px 0;
+} 
 .footer-infor__circle{
     display: flex;
     flex-direction: row;
@@ -393,12 +383,13 @@
 }
 
 .footer-copyright{
-    margin-top: 32px;
-    margin-bottom: 33px;
-    font: 13px var(--ff1);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 13px var(--ff-roboto);
     font-weight: 400;
     line-height: 15px;
-    text-align: center;
     color: #F2F2F2;
 }
 
