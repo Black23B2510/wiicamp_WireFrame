@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,10 +15,16 @@
 </head>
 <body>
     <div class="wraper">
-        <div class="container">
-            <div class="header">
-                <div class="header__logo">Logo</div>
-                <ul class="header__navbar">
+       <div class="container">
+        <div class="header">
+            <div class="header__logo">
+                <img src="/assets/images/cat.jpg" alt="">
+            </div>
+            <div id="mobile-menu" class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div id="nav" class="nav">
+                <ul id="header__navbar" class="header__navbar">
                     <li><a href="#">About us</a></li>
                     <li><a href="#">Brands</a></li>
                     <li><a href="#">News</a></li>
@@ -28,6 +35,7 @@
                 </ul>
             </div>
         </div>
+       </div>
         <div class="slider">
             <div class="container">
                 <div class="swiper">
@@ -81,13 +89,13 @@
                 <h3 class="product__title">Our products</h3>
                 <div class="product-menu">
                     <ul class="product-menu-nav">
-                        <li class="nav-link index">
-                            <a href="#">Technology</a>
-                            <div class="nav-link__underline"></div>
+                        <li class="nav-item index">
+                            <a href="#"><b>Technology</b></a>
+                            <div class="nav-item__underline"></div>
                         </li>
-                        <li class="nav-link"><a href="#">Fashion</a></li>
-                        <li class="nav-link"><a href="#">Home direction</a></li>
-                        <li class="nav-link"><a href="#">More</a><i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+                        <li class="nav-item"><a href="#">Fashion</a></li>
+                        <li class="nav-item"><a href="#">Home direction</a></li>
+                        <li class="nav-item"><a href="#">More</a><i class="fa fa-chevron-down" aria-hidden="true"></i></li>
                     </ul>
                 </div>
                 <div class="product-list">
@@ -151,42 +159,47 @@
             <div class="footer-signup">
                 <div class="footer-signup__title">Find out more about us</div>
                 <div class="footer-sign-up__input">
-                    <input id="email" name="email"  placeholder="Enter your Email address" type="email" required>
+                    <input id="email" name="email"  placeholder="Enter your Emai address..." type="email" required>
                     <button class="btn-sign-up">SIGN UP</button>
                 </div>
             </div>
-            <div class="footer-wraper">
-                <div class="footer-infor">
-                    <div class="footer-infor__title">
-                        <p>GLUXURY</p>
-                    </div>
-                    <div class="footer-infor__site">
+            <hr>
+            <div class="footer-infor">
+                <div class="footer-infor__title">
+                    <p>GLUXURY</p>
+                </div>
+                <div class="footer-infor__middle">
+                    <div class="middle__site">
                         <h4 class="site-title">Site</h4>
                         <ul class="site-list">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About us</a></li>
                         </ul>
                     </div>
-                    <div class="footer-infor__terms">
+                    <div class="middle__terms">
                         <h4 class="terms-title">Terms</h4>
                         <ul class="terms-list">
                             <li><a href="#">Policy</a></li>
                             <li><a href="#">Privacy</a></li>
                         </ul>
                     </div>
-                    <div class="footer-infor__circle">
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                    </div>
+                </div>
+                <div class="footer-infor__circle">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
                 </div>
             </div>
+            <hr>
             <div class="footer-copyright">Copyright informations</div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+        
+    </script>
 </body>
 </html>
