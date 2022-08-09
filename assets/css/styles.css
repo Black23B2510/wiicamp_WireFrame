@@ -176,6 +176,7 @@
     align-items: center;
     height: 64px;
 }
+
 .product-menu-nav .nav-item {
     position: relative;
 }
@@ -299,50 +300,51 @@
 }
 
 .footer-sign-up__input{
+    width: 616px;
+    height: 48px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     border-radius: 40px;
-    gap:291px;
     background-color: #FFFFFF;
 }
 
 .footer-sign-up__input input, .footer-sign-up__input button{
     outline: none;
-    border: 1px solid #FFFFFF;
-    background-color: #FFFFFF;
+    border: none;
+    background: none;
 }
 
 .footer-sign-up__input input{
-    margin: 12px 0 13px 40px;
+    width: 70%;
+    /* margin: 12px 0 13px 40px; */
     color: #9A9A9A;
-    /* font-family:  var(--ff3); */
     opacity: 0.6;
 }
 
 .footer-sign-up__input button{
-    margin: 12px 40px 13px 0;
-    margin-right: 40px;
+    /* margin: 12px 40px 13px 0; */
     color: var(--main-color);
     font: var(--fz1) var(--ff3);
     font-weight: 600;
     line-height: 150%;
 }
 
-.footer hr{
+.footer .footer-infor-wraper{
     width: 100%;
+    padding: 63px 0px;
     border-top: 1px solid #606060;
     border-bottom: 1px solid #606060;
 }
 
-.footer-infor{
-    margin-top: 63px;
-    margin-bottom: 63px;
+.footer .footer-infor{
+    max-width: 938px;
+    height: 106px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin: 0 auto;
 }
 
 .footer-infor p{
@@ -352,7 +354,7 @@
     line-height: 39px;
 }
 
-.footer-infor__middle h4{
+.footer-infor h4{
     color: #9D9D9D;
     font: var(--fz2) var(--ff2);
     font-weight: 400;
@@ -360,20 +362,15 @@
     
 }
 
-.footer-infor__middle{
-    display: flex;
-    flex-direction: row;
-    gap: 171px;
-}
 .site-title, .terms-title{
     margin-bottom: 29px;
 }
 
-.footer-infor__middle li{
+.footer-infor li{
     margin-bottom: 13px;
 }
 
-.footer-infor__middle .site-list a, .footer-infor__middle .terms-list a{
+.footer-infor .site-list a, .footer-infor .terms-list a{
     color: #FFFFFF;
     font: var(--fz1) var(--ff2);
     font-weight: 500;
