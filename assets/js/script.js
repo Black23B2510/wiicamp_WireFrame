@@ -13,11 +13,9 @@ const swiper = new Swiper('.swiper', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    // And if we need scrollbar
-    
   });
   const mobileMenu = document.getElementById("mobile-menu");
-  const menu = document.getElementById("nav");
+  const menu = document.getElementById("main-nav__bar");
   mobileMenu.onclick = function() {
     menu.classList.toggle("active")
   }
