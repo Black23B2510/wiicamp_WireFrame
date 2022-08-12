@@ -22,23 +22,31 @@
     box-sizing: border-box;
     vertical-align: baseline;
 }
-
 body{
     max-width: 1920px;
 }
 
 .container{
-    max-width: 1194px;
+    width: 1194px;
     margin: 0 auto;
 }
 
+header{
+    top: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    z-index: 999;
+    box-shadow: 0 0 15px rgb(0 0 0 / 30%);
+}
 /* css for header .main-nav */
 .main-nav{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    background-color: #FFFFFF;
 }
 
 .main-nav__logo img{
@@ -75,6 +83,7 @@ body{
 
 /* carousel */
 .carousel{
+    margin-top: 80px;
     background-color: var(--box-color);
 }
 
