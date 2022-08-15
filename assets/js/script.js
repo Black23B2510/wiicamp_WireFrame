@@ -14,9 +14,18 @@ const swiper = new Swiper('.swiper', {
       prevEl: '.swiper-button-prev',
     },
   });
-  const mobileMenu = document.getElementById("mobile-menu");
-  const menu = document.getElementById("main-nav__bar");
-  mobileMenu.onclick = function() {
-    menu.classList.toggle("active")
+const mobileMenu = document.getElementById('mobile-menu');
+const menu = document.getElementById('main-nav__bar');
+mobileMenu.onclick = function() {
+  menu.classList.toggle('active')
+}
+
+window.onscroll = function (){
+  if ( document.documentElement.scrollTop > 80){
+    document.getElementById('header').className = 'header';
+  }else {
+    document.getElementById("header").className = "";
   }
+}
+
   

@@ -21,7 +21,9 @@
     list-style-type: none;
     box-sizing: border-box;
     vertical-align: baseline;
+    scroll-behavior: smooth;
 }
+
 body{
     max-width: 1920px;
 }
@@ -38,8 +40,15 @@ header{
     left: 0;
     background-color: #FFFFFF;
     z-index: 999;
+}
+
+.header{
+    /* overflow: hidden;
+    transition: 0.5s; 
+    background-color: cadetblue; */
     box-shadow: 0 0 15px rgb(0 0 0 / 30%);
 }
+
 /* css for header .main-nav */
 .main-nav{
     width: 100%;
@@ -382,7 +391,7 @@ footer .footer-infor__wraper{
     height: 106px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     margin: 63px auto;
 }
 
@@ -417,7 +426,7 @@ footer .footer-infor__wraper{
     width: 32px;
     height: 32px;
     border: 2px solid #FFFFFF;
-    border-radius: 100px;
+    border-radius: 99px;
 }
 
 .footer-copyright p{

@@ -1,12 +1,12 @@
 /* reset font-size to fit each screen */
 
-@media only screen and (max-width:1200px){
+@media only screen and (max-width:1400px){
     :root{
-        --fz1: 13px;
-        --fz2: 15px;
-        --fz3: 18px;
+        --fz1: 14px;
+        --fz2: 16px;
+        --fz3: 17px;
         --fz4: 30px;
-        --fz5: 38px;
+        --fz5: 40px;
     }
 }
 
@@ -14,7 +14,7 @@
     :root{
         --fz1: 13px;
         --fz2: 15px;
-        --fz3: 17px;
+        --fz3: 15px;
         --fz4: 28px;
         --fz5: 32px;
     }
