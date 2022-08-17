@@ -15,8 +15,6 @@
 }
 
 *{
-    margin: 0;
-    padding: 0;
     text-decoration: none;
     list-style-type: none;
     box-sizing: border-box;
@@ -24,13 +22,15 @@
     scroll-behavior: smooth;
 }
 
-body{
+.wraper{
     max-width: 1920px;
+    margin: 0 auto;
 }
 
 .container{
-    width: 1194px;
+    max-width: 1224px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 header{
@@ -43,9 +43,9 @@ header{
 }
 
 .header{
-    /* overflow: hidden;
+    overflow: hidden;
     transition: 0.5s; 
-    background-color: cadetblue; */
+    background-color: cadetblue;
     box-shadow: 0 0 15px rgb(0 0 0 / 30%);
 }
 
@@ -281,7 +281,7 @@ header{
 }
 
 /* about us */
-.about-us{
+/* .about-us{
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -291,9 +291,19 @@ header{
     height: 900px;
     margin-top: 75px;
     background-color: var(--box-color);
-}
+} */
 
-.about-us .about-us__title{
+.about-us{
+    background-color: #E1E1E1;
+}
+.about-us__wraper{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 319px;
+    padding-bottom: 320px;
+    width: 581px;
+}
+/* .about-us .about-us__title{
     font: var(--fz4) var(--ff-montserrat);
     font-weight: 700;
     line-height: 39px;
@@ -301,7 +311,7 @@ header{
 }
 
 .about-us .about-us__content{
-    width: 581px;
+    max-width: 581px;
     height: auto;
     font: var(--fz1) var(--ff-roboto);
     font-weight: 400;
@@ -313,7 +323,6 @@ header{
 
 .about-us .about-us__btn{
     width: 172px;
-    height: 50px;
     padding: 16px;
     border-radius: var(--box-border-radius);
     font: var(--fz1) var(--ff-roboto);
@@ -322,7 +331,7 @@ header{
     color: #F2F2F2;
     background-color: #333333;
 
-}
+} */
 
 /* footer */
 footer{

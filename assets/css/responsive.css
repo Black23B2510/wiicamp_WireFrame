@@ -88,7 +88,7 @@
     }
 
     .main-nav__bar{
-        position: absolute;
+        position: fixed;
         height: 0;
         top: 80px;
         right: 0;
@@ -169,7 +169,7 @@
     .about-us{
         height:471px;
     }
-    .footer-sign-up__input{
+    .footer-sign-up__form{
         width: 400px;
         height: 32px;
     }
